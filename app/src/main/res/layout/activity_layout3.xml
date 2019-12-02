@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Layout2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#aa0000"
+            android:text="red"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00aa00"
+            android:text="green"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#0000aa"
+            android:text="blue"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#aaaa00"
+            android:text="yellow"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:text="row1_column1"
+                    android:padding="3dip"
+                    android:background="#aa0000"/>
+                <TextView
+                    android:text="row1_column2"
+                    android:padding="3dip"
+                    android:gravity="center_horizontal"
+                    android:background="#00aa00"/>
+                <TextView
+                    android:text="row1_column3"
+                    android:padding="3dip"
+                    android:background="#0000aa"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="row2_column1"
+                    android:padding="3dip"
+                    android:background="#aaa000"
+                    />
+                <TextView
+                    android:text="row2_column2"
+                    android:padding="3dip"
+                    android:background="#00aaa0"
+                    />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>
